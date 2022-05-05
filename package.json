@@ -6,7 +6,9 @@
   "author": "折木 <1076849402@qq.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "pnpm -r --filter ./packages --parallel run dev"
+    "dev": "pnpm -r --filter ./packages --parallel run $P",
+    "dep": "esmo ./scripts/pnpm_add.ts",
+    "remove": "esmo ./scripts/pnpm_remove.ts"
   },
   "dependencies": {
     "react": "^18.1.0",
@@ -14,7 +16,11 @@
   },
   "devDependencies": {
     "@tsconfig/recommended": "^1.0.1",
+    "@types/node": "^17.0.31",
+    "cross-env": "^7.0.3",
     "esbuild": "^0.14.38",
-    "serve": "^13.0.2"
+    "esno": "^0.14.1",
+    "serve": "^13.0.2",
+    "tsup": "^5.12.6"
   }
 }
