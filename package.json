@@ -7,9 +7,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "pnpm -r --filter ./packages --parallel run $P",
-    "dep": "esmo ./scripts/pnpm_add.ts",
+    "dep": "esmo -r dotenv/config ./scripts/pnpm_add.ts",
     "mk": "esmo -r dotenv/config ./scripts/make_package.ts",
-    "remove": "esmo ./scripts/pnpm_remove.ts"
+    "remove": "esmo -r dotenv/config ./scripts/pnpm_remove.ts"
   },
   "dependencies": {
     "react": "^18.1.0",
@@ -24,6 +24,7 @@
     "esbuild": "^0.14.38",
     "esno": "^0.14.1",
     "serve": "^13.0.2",
-    "tsup": "^5.12.6"
+    "tsup": "^5.12.6",
+    "typescript": "^4.7.4"
   }
 }

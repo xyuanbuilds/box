@@ -3,7 +3,6 @@
   "extends": "@tsconfig/recommended/tsconfig.json",
   "compilerOptions": {
     "outDir": "./dist",
-    "rootDir": ".",
     "module": "CommonJS",
     "target": "ES5",
     "lib": ["ESNEXT"],
@@ -26,7 +25,11 @@
     "removeComments": false,
     "preserveConstEnums": true,
     "incremental": true,
-    "tsBuildInfoFile": "./dist/.ts_build_info"
-  },
-  "include": ["src/*.json", "src/**/*.ts"]
+    "tsBuildInfoFile": "./dist/.ts_build_info",
+    "baseUrl": "./packages",
+    "paths": {
+      "@boxes/utils": ["utils/src"],
+      "@boxes/hooks": ["hooks/src"]
+    }
+  }
 }

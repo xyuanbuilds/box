@@ -38,3 +38,4 @@ test_app.js
 test_file.js
 webpack.log
 test-report.html
+packages/webpack

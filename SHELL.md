@@ -7,3 +7,9 @@ pnpm i typescript -w
 
 // 安装公共开发依赖
 pnpm i typescript -w -D
+
+// 所有包安装依赖
+pnpm i typescript -r
+
+// 内部依赖
+pnpm add -r @boxes/utils --filter @boxes/hooks
