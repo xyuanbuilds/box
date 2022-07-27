@@ -6,6 +6,7 @@
   "author": "折木 <1076849402@qq.com>",
   "license": "MIT",
   "scripts": {
+    "preinstall": "node ./scripts/preinstall",
     "dev": "pnpm -r --filter ./packages --parallel run $P",
     "dep": "esmo -r dotenv/config ./scripts/pnpm_add.ts",
     "mk": "esmo -r dotenv/config ./scripts/make_package.ts",

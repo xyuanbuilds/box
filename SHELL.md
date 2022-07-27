@@ -13,3 +13,7 @@ pnpm i typescript -r
 
 // 内部依赖
 pnpm add -r @boxes/utils --filter @boxes/hooks
+
+// workspace packages all build
+pnpm run -r build
+https://juejin.cn/post/7053807488952434719#heading-5

@@ -1,3 +1,7 @@
+/**
+ * pnpm run mk
+ *  packageName
+ */
 import * as path from "node:path";
 import { spawn } from "node:child_process";
 import { createInterface } from "node:readline";

@@ -5,9 +5,9 @@ const { PROJECT_NAME } = process.env;
 function check() {
   console.log(`
   params:
-    -ws: add workspace package
-    -D: add devDependencies
-    -d: packages all add
+    -ws: add package in cur workspace as dependence
+    -d: add dependence to all packages
+    -D: add devDependence
   `);
 
   return new Promise<void>((r, rj) => {
