@@ -3,9 +3,11 @@ import { predicates } from "@boxes/utils";
 
 const { isFn } = predicates;
 
+type OnToggleFn = (state: boolean) => void;
+
 interface UseToggleProps {
-  defaultValue?: boolean;
-  onToggle?: (state: boolean) => void;
+  defaultValue?: boolean | (() => boolean);
+  onToggle?: OnToggleFn;
 }
 
 const useHooks = ({ defaultValue, onToggle }: UseToggleProps) => {

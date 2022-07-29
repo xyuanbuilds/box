@@ -22,3 +22,5 @@ export interface NonEmptyArray<A> extends Array<A> {
   pop(): A;
   shift(): A;
 }
+
+export type AnyFunction = (...args: any) => any;

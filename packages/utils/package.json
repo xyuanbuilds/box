@@ -8,10 +8,12 @@
     "build": "tsup --target es5 --outDir='lib'",
     "build:es": "tsup "
   },
+  "sideEffects": false,
   "author": "折木",
   "license": "MIT",
   "devDependencies": {
     "@swc/core": "^1.2.206",
+    "@types/react": "^18.0.14",
     "tsup": "^6.1.2",
     "typescript": "^4.7.4"
   }

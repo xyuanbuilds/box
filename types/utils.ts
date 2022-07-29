@@ -1,8 +1,7 @@
 export type Copy<T extends object> = {
   [K in keyof T]: T[K];
 };
-
-// export type Id<T> = T extends infer U ? { [K in keyof U]: U[K] } : never;
+export type Id<T> = T extends infer U ? { [K in keyof U]: U[K] } : never;
 
 export type ReadOnlyWith<T extends object, U extends keyof T> = {
   readonly [Key in U]: T[Key];
@@ -28,11 +27,9 @@ export type PartialWith<T extends object, K extends keyof T> = Id<
   }
 >;
 
-export type Id<T> = T extends infer U ? { [K in keyof U]: U[K] } : never;
-
 type A = { a: 1; b: 2 };
 type B = { a: 1 } & { b: 2 };
 
 type T = B extends A ? 1 : 0;
 
-type AA = Id<B>;
+type AA = Copy<B>;

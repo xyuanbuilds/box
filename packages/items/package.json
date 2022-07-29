@@ -1,5 +1,5 @@
 {
-  "name": "@boxes/hooks",
+  "name": "@boxes/items",
   "version": "0.0.1",
   "description": "hooks",
   "main": "index.js",
@@ -10,11 +10,12 @@
   "license": "MIT",
   "dependencies": {
     "@boxes/utils": "workspace:^0.0.1",
-    "@types/react": "^18.0.14",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@types/react": "^18.0.14",
+    "@types/react-dom": "^18.0.5",
     "typescript": "^4.7.4"
   }
 }

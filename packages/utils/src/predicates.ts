@@ -1,3 +1,5 @@
+import type * as React from "react";
+
 declare global {
   export type PlainObject = Object;
 
@@ -15,9 +17,23 @@ declare global {
     pop(): A;
     shift(): A;
   }
+
+  export type AnyFunction = (...args: any) => any;
 }
-export const a = new Set();
-export const isArr: Predicator<Array<any>> = Array.isArray;
+
+// export const isFn: Predicator<AnyFunction> = <T extends Function>(
+//   val: unknown
+// ): val is T => typeof val === "function";
+
+export function isFn<T extends AnyFunction>(val: unknown): val is T {
+  return typeof val === "function";
+}
+
+// export const isArr: Predicator<Array<any>> = Array.isArray;
+export function isArr<T extends Array<any>>(val: unknown): val is T {
+  return typeof val === "function";
+}
+
 export const isNoEmptyArr = <T extends unknown>(
   val: Array<T>
 ): val is NonEmptyArray<T> => isArr(val) && val.length > 0;
@@ -63,12 +79,38 @@ export const isPlainObj: Predicator<PlainObject> = (
   return Object.getPrototypeOf(val) === proto;
 };
 
-export const isFn: Predicator<Function> = <T extends Function>(
-  val: unknown
-): val is T => typeof val === "function";
-
 export const isReg: Predicator<RegExp> = (val: unknown): val is RegExp =>
   val instanceof RegExp;
 
 export const isSymbol: Predicator<Symbol> = (val: unknown): val is Symbol =>
   typeof val === "symbol";
+
+// checkout React type: https://dev.to/fromaline/jsxelement-vs-reactelement-vs-reactnode-2mh2
+// react type cheatsheets: https://github.com/typescript-cheatsheets/react#useful-react-prop-type-examples
+export function isReactComponent<T extends React.ComponentType<any>>(
+  val: T
+): val is T {
+  // class\FC\memo\forwardRef
+  return val && (isClassComponent(val) || isFn(val) || isExoticComponent(val));
+}
+
+// class
+function isClassComponent(component: any) {
+  return (
+    typeof component === "function" &&
+    (() => {
+      const proto = Object.getPrototypeOf(component);
+      return proto.prototype && proto.prototype.isReactComponent;
+    })()
+  );
+}
+
+// memo、forwardRef
+function isExoticComponent(component: any) {
+  return (
+    typeof component === "object" &&
+    typeof component.$$typeof === "symbol" &&
+    // React Symbols: https://github.com/facebook/react/blob/d862f0ea56/packages/shared/ReactSymbols.js
+    ["react.memo", "react.forward_ref"].includes(component.$$typeof.description)
+  );
+}
