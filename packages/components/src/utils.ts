@@ -1,5 +1,4 @@
 import { compare, isFn } from "@boxes/utils";
-import type { TableState } from "./table/core/table";
 const { isShallowEqual } = compare;
 
 // * 类似 memo
@@ -41,17 +40,18 @@ export function functionalUpdate<T>(updater: Updater<T>, input: T): T {
 }
 
 // * 创造 Updater
-
-export function makeStateUpdater<K extends keyof TableState>(
-  key: K,
-  instance: unknown
-) {
-  return (updater: Updater<TableState[K]>) => {
-    (instance as any).setState((old: TableState) => {
-      return {
-        ...old,
-        [key]: functionalUpdate(updater, (old as any)[key]),
-      };
-    });
+export function initUpdater<IState>() {
+  return function makeStateUpdater<K extends keyof IState>(
+    key: K,
+    instance: unknown
+  ) {
+    return (updater: Updater<IState[K]>) => {
+      (instance as any).setState((old: IState) => {
+        return {
+          ...old,
+          [key]: functionalUpdate(updater, (old as any)[key]),
+        };
+      });
+    };
   };
 }

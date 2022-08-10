@@ -85,15 +85,19 @@ export const isReg: Predicator<RegExp> = (val: unknown): val is RegExp =>
 export const isSymbol: Predicator<Symbol> = (val: unknown): val is Symbol =>
   typeof val === "symbol";
 
+export type Renderable<TProps> =
+  | React.ReactNode
+  | React.FC<TProps>
+  | React.Component<TProps>;
+
 // checkout React type: https://dev.to/fromaline/jsxelement-vs-reactelement-vs-reactnode-2mh2
 // react type cheatsheets: https://github.com/typescript-cheatsheets/react#useful-react-prop-type-examples
-export function isReactComponent<T extends React.ComponentType<any>>(
-  val: T
-): val is T {
+
+function isReactComponent(val: unknown): val is React.FC {
   // class\FC\memo\forwardRef
   return val && (isClassComponent(val) || isFn(val) || isExoticComponent(val));
 }
-
+export { isReactComponent };
 // class
 function isClassComponent(component: any) {
   return (

@@ -8,5 +8,11 @@
     "declaration": true,
     "resolveJsonModule": true
   },
-  "include": ["src/**/*.ts", "package.json", "tsup.config.ts"]
+  "include": [
+    "src/**/*.ts",
+    "package.json",
+    "tsup.config.ts",
+    "typings.d.ts",
+    "global.d.ts"
+  ]
 }

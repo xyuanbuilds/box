@@ -3,7 +3,6 @@ import { isReactComponent } from "@boxes/utils";
 
 // * 所有需要渲染的内容，都通过 render 进行调用
 export const render = (Comp: any, props) =>
-  // !Comp ? null : isReactElement(Comp) ? <Comp {...props} /> : Comp;
   !Comp ? null : isReactComponent(Comp) ? <Comp {...props} /> : Comp;
 
 export interface TInstance {}
