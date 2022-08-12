@@ -1,3 +1,5 @@
+import type { GroupButtonState } from "./group";
+
 export type ButtonFeature<T extends {}> = {
   /** 往初始配置 中添加的 内容 */
   getDefaultOptions?: (instance: any) => any;
@@ -6,3 +8,10 @@ export type ButtonFeature<T extends {}> = {
   /** 往最终生成的 instance 中添加方法 */
   createInstance?: (instance: any) => any;
 };
+
+export interface ButtonCoreState {
+  disabled?: boolean;
+  loading?: boolean;
+}
+
+export type ButtonState = ButtonCoreState & GroupButtonState;

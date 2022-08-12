@@ -13,15 +13,16 @@ export interface ButtonState {
 interface ButtonOptions extends BasicOption<ButtonState> {
   type?: "outlined" | "contained" | "text";
   size?: "small" | "middle" | "large";
-  // disabled?: boolean;
-  // loading?: boolean;
+  /** 在 group 中的 button 拥有 parent */
+  parent?: any;
+  state: ButtonState;
 }
 
 const defaultState: ButtonState = {
   loading: false,
   disabled: false,
 };
-const defaultOptions: ButtonOptions & { state: Partial<ButtonState> } = {
+const defaultOptions: ButtonOptions = {
   type: "outlined",
   size: "middle",
   state: defaultState,
@@ -36,7 +37,9 @@ interface ButtonCoreInstance {
 }
 
 interface Button extends ButtonCoreInstance {
+  /** 初始状态 */
   initialState: Partial<ButtonState>;
+  /** 默认配置 */
   defaultOptions: typeof defaultOptions;
   options: typeof defaultOptions;
   _features: ButtonFeature<ButtonState>[];
@@ -44,7 +47,7 @@ interface Button extends ButtonCoreInstance {
 
 const features = [Group];
 
-export function createButton(options: ButtonOptions): Button {
+export function createButton(options: Partial<ButtonOptions>): Button {
   // TODO generic
   let initialState = {};
   const instance = {
@@ -65,7 +68,7 @@ export function createButton(options: ButtonOptions): Button {
     setState: (updater) => {
       instance.options.onStateChange?.(updater);
     },
-    /** 每次setOption 相当于初始话，因为state默认使用初始state */
+    /** 每次setOption 相当于重置，因为state可以直接被替换，state缺失时默认使用初始state */
     setOptions: (updater) => {
       const newOptions = functionalUpdate(updater, instance.options);
 

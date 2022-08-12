@@ -5,6 +5,7 @@ import type { ButtonState } from ".";
 
 export interface GroupButtonState {
   buttons: any[];
+  orientation: "vertical" | "horizontal";
 }
 
 export const Group: ButtonFeature<ButtonState> = {
@@ -15,14 +16,14 @@ export const Group: ButtonFeature<ButtonState> = {
 
   getInitialState: (state) => {
     return {
-      buttons: [],
       ...state,
     };
   },
 
+  // ? 父子间怎么通信的
   createInstance: (instance) => {
     return {
-      getHeaderGroups: memo(
+      createButtonGroup: memo(
         () => [instance.buttons, instance.get],
         (buttons, options) => {
           return buttons;
