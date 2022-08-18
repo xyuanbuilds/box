@@ -16,6 +16,8 @@ interface ButtonOptions extends BasicOption<ButtonState> {
   /** 在 group 中的 button 拥有 parent */
   parent?: any;
   state: ButtonState;
+  /** 相当于一个低级别的 option */
+  group?: ButtonOptions;
 }
 
 const defaultState: ButtonState = {

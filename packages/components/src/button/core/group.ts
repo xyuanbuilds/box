@@ -29,6 +29,13 @@ export const Group: ButtonFeature<ButtonState> = {
           return buttons;
         }
       ),
+      /** 使用group
+       * getGroup(n).map(button)
+       * getGroup([<button />]) // 内部处理  render /
+       */
+      getGroup() {
+
+      }
       // const [grouping, setGrouping] = React.useState<GroupingState>([])
 
       // const instance = useTableInstance(table, {
