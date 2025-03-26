@@ -1,0 +1,118 @@
+.wrapper-6 {
+  border-radius: 4rpx;
+  line-height: 1.5;
+  margin-top: 24rpx;
+  margin-left: 12rpx;
+  margin-right: 4rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12rpx;
+  box-sizing: border-box;
+}
+
+.button-style {
+  border-radius: 64rpx;
+  padding: 8rpx 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 52rpx;
+  padding-inline-start: 32rpx;
+  padding-inline-end: 32rpx;
+  background-color: rgb(248, 250, 254);
+  color: rgb(61, 80, 114);
+  font-size: 24rpx;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.button-content {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.button-icon {
+  border-radius: 8rpx;
+  flex-shrink: 0;
+  width: 24rpx;
+  height: 24rpx;
+  box-sizing: border-box;
+}
+
+.button-text {
+  color: rgb(61, 80, 114);
+  font-size: 24rpx;
+  margin-left: 10rpx;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.button-style-secondary {
+  border-radius: 64rpx;
+  padding: 8rpx 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 52rpx;
+  padding-inline-start: 32rpx;
+  padding-inline-end: 32rpx;
+  background-color: rgb(248, 250, 254);
+  color: rgb(50, 70, 106);
+  font-size: 24rpx;
+  box-sizing: border-box;
+}
+
+.button-icon-secondary {
+  border-radius: 4rpx;
+  flex-shrink: 0;
+  width: 20rpx;
+  height: 20rpx;
+  box-sizing: border-box;
+}
+
+.button-text-secondary {
+  color: rgb(50, 70, 106);
+  font-size: 24rpx;
+  margin-left: 10rpx;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.button-style-tertiary {
+  border-radius: 64rpx;
+  padding: 8rpx 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56rpx;
+  padding-inline-start: 32rpx;
+  padding-inline-end: 32rpx;
+  background-color: rgb(248, 250, 254);
+  color: rgb(61, 80, 114);
+  font-size: 24rpx;
+  box-sizing: border-box;
+}
+
+.button-style-quaternary {
+  border-radius: 64rpx;
+  padding: 8rpx 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56rpx;
+  padding-inline-start: 32rpx;
+  padding-inline-end: 32rpx;
+  background-color: rgb(248, 250, 254);
+  box-sizing: border-box;
+}
+
+.button-content-quaternary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+}

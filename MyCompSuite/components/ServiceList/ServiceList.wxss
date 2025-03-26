@@ -1,0 +1,233 @@
+.wrapper-4 {
+  background-color: rgb(222, 233, 253);
+  line-height: 1.5;
+  margin-right: 4rpx;
+  padding: 16rpx 32rpx 12rpx 28rpx;
+  box-sizing: border-box;
+}
+
+.service-container {
+  border-radius: 22rpx;
+  background-color: rgb(236, 243, 254);
+  border-color: #dee9fd;
+  border-style: solid;
+  border-width: 2rpx;
+  margin-top: 4rpx;
+  margin-right: 4rpx;
+  display: flex;
+  flex-direction: column;
+  padding: 28rpx 44rpx 20rpx 20rpx;
+  box-sizing: border-box;
+}
+
+.service-title {
+  color: rgb(38, 59, 97);
+  font-size: 24rpx;
+  font-weight: bold;
+  margin-left: 4rpx;
+  box-sizing: border-box;
+}
+
+.service-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 8rpx;
+  margin-right: 8rpx;
+  row-gap: 7;
+  box-sizing: border-box;
+}
+
+.view-g-xn-zne {
+  width: 25%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  max-width: 25%;
+  padding-left: 8rpx;
+  padding-right: 8rpx;
+  box-sizing: border-box;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.route-recommendation-image {
+  flex-shrink: 0;
+  border-radius: 6rpx;
+  height: 44rpx;
+  width: 44rpx;
+  align-self: center;
+  box-sizing: border-box;
+}
+
+.route-recommendation {
+  color: rgb(55, 75, 110);
+  font-size: 24rpx;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.view-jq-bmmq {
+  width: 25%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  max-width: 25%;
+  padding-left: 8rpx;
+  padding-right: 8rpx;
+  box-sizing: border-box;
+}
+
+.shop-recommendation-text {
+  color: rgb(57, 77, 111);
+  font-size: 24rpx;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.view-b-y-zb-la {
+  width: 25%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  max-width: 25%;
+  padding-left: 8rpx;
+  padding-right: 8rpx;
+  box-sizing: border-box;
+}
+
+.food-recommendation-text {
+  color: rgb(60, 79, 114);
+  font-size: 24rpx;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.view-ri-r-fe-j {
+  width: 25%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  max-width: 25%;
+  padding-left: 8rpx;
+  padding-right: 8rpx;
+  box-sizing: border-box;
+}
+
+.reservation-ticket-image {
+  border-radius: 4rpx;
+  flex-shrink: 0;
+  height: 44rpx;
+  width: 44rpx;
+  align-self: center;
+  box-sizing: border-box;
+}
+
+.ticket-reservation-text {
+  color: rgb(61, 80, 114);
+  font-size: 24rpx;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.view-qhav-vn {
+  width: 25%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  max-width: 25%;
+  padding-left: 8rpx;
+  padding-right: 8rpx;
+  box-sizing: border-box;
+}
+
+.product-recommendation-image {
+  border-radius: 22rpx;
+  flex-shrink: 0;
+  height: 44rpx;
+  width: 48rpx;
+  align-self: center;
+  box-sizing: border-box;
+}
+
+.product-recommendation-text {
+  color: rgb(50, 70, 106);
+  font-size: 24rpx;
+  margin-top: 4rpx;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.view-m-bh-kbf {
+  width: 25%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  max-width: 25%;
+  padding-left: 8rpx;
+  padding-right: 8rpx;
+  box-sizing: border-box;
+}
+
+.view-a-pc-uqt {
+  width: 25%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  max-width: 25%;
+  padding-left: 8rpx;
+  padding-right: 8rpx;
+  box-sizing: border-box;
+}
+
+.food-recommendation-image {
+  flex-shrink: 0;
+  border-radius: 6rpx;
+  height: 44rpx;
+  width: 48rpx;
+  align-self: center;
+  box-sizing: border-box;
+}
+
+.food-recommendation-text-two {
+  color: rgb(104, 121, 150);
+  font-size: 24rpx;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.view-yoglwd {
+  width: 25%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  max-width: 25%;
+  padding-left: 8rpx;
+  padding-right: 8rpx;
+  box-sizing: border-box;
+}
+
+.all-services {
+  position: relative;
+  width: 72rpx;
+  height: 84rpx;
+  box-sizing: border-box;
+}
+
+.all-services-text {
+  color: rgb(55, 75, 110);
+  font-size: 24rpx;
+  position: absolute;
+  left: 0rpx;
+  right: 0rpx;
+  top: 48rpx;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.all-services-image {
+  flex-shrink: 0;
+  border-radius: 6rpx;
+  position: absolute;
+  width: 52rpx;
+  height: 52rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0rpx;
+  box-sizing: border-box;
+}

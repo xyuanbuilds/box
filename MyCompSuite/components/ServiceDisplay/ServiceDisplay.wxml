@@ -1,0 +1,19 @@
+<view class="wrapper-3">
+  <view class="service-container">
+    <text class="service-name">游玩服务</text>
+    <view class="service-details">
+      <view class="service-info">
+        <view class="service-image-wrapper">
+          <image
+            src="https://weavefox.alipay.com/assets/2cdd6fa4-13aa-4387-989a-7e32688918fd.png"
+            class="service-thumbnail"
+          />
+        </view>
+      </view>
+      <image
+        src="https://weavefox.alipay.com/assets/bf9b7ece-d243-435d-ace3-07ca3683db3f.png"
+        class="service-main-image"
+      />
+    </view>
+  </view>
+</view>
