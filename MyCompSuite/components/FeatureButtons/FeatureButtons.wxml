@@ -1,0 +1,35 @@
+<view class="wrapper-6">
+  <button class="button-style">
+    <view class="button-content">
+      <image src="https://weavefox.alipay.com/assets/ab94cb51-fa90-4ded-a9e2-6805093f2408.png" class="button-icon" />
+      <text class="button-text">深度搜索</text>
+    </view>
+  </button>
+  <button class="button-style-secondary">
+    <view class="button-content">
+      <image
+        src="https://weavefox.alipay.com/assets/a8845fc7-6db1-45fe-a739-52e650b9624a.png"
+        class="button-icon-secondary"
+      />
+      <text class="button-text-secondary">账单分析</text>
+    </view>
+  </button>
+  <button class="button-style-tertiary">
+    <view class="button-content">
+      <image
+        src="https://weavefox.alipay.com/assets/774964f4-2762-49b4-bc6b-6192834cea59.png"
+        class="button-icon-secondary"
+      />
+      <text class="button-text">记个事</text>
+    </view>
+  </button>
+  <button class="button-style-quaternary">
+    <view class="button-content-quaternary">
+      <image
+        src="https://weavefox.alipay.com/assets/4194ec19-0d27-432d-9c22-1d312dc8dddd.png"
+        class="button-icon-secondary"
+      />
+      <text class="button-text-secondary">饮食拍</text>
+    </view>
+  </button>
+</view>

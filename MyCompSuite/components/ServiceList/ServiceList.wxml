@@ -1,0 +1,79 @@
+<view class="wrapper-4">
+  <view class="service-container">
+    <text class="service-title">配套服务</text>
+    <view class="service-row">
+      <view class="view-g-xn-zne">
+        <view class="service-item">
+          <image
+            src="https://weavefox.alipay.com/assets/687cdae6-3a86-4383-b169-c5c483e77248.png"
+            class="route-recommendation-image"
+          />
+          <text class="route-recommendation">路线推荐</text>
+        </view>
+      </view>
+      <view class="view-jq-bmmq">
+        <view class="service-item">
+          <image
+            src="https://weavefox.alipay.com/assets/0fc30e53-3a68-4f6f-9aff-22b127e1e0d7.png"
+            class="route-recommendation-image"
+          />
+          <text class="shop-recommendation-text">店铺推荐</text>
+        </view>
+      </view>
+      <view class="view-b-y-zb-la">
+        <view class="service-item">
+          <image
+            src="https://weavefox.alipay.com/assets/e40a3f35-66c6-43b9-8191-b0f4eb4c2d31.png"
+            class="route-recommendation-image"
+          />
+          <text class="food-recommendation-text">美食推荐</text>
+        </view>
+      </view>
+      <view class="view-ri-r-fe-j">
+        <view class="service-item">
+          <image
+            src="https://weavefox.alipay.com/assets/c7f7b9ad-2b35-448b-a139-8807d05e2273.png"
+            class="reservation-ticket-image"
+          />
+          <text class="ticket-reservation-text">预约门票</text>
+        </view>
+      </view>
+      <view class="view-qhav-vn">
+        <view class="service-item">
+          <image
+            src="https://weavefox.alipay.com/assets/149d1107-e67a-493d-a778-842e6dd5526d.png"
+            class="product-recommendation-image"
+          />
+          <text class="product-recommendation-text">商品推荐</text>
+        </view>
+      </view>
+      <view class="view-m-bh-kbf">
+        <view class="service-item">
+          <image
+            src="https://weavefox.alipay.com/assets/d2bb7867-a2a1-44c1-9609-a32db034e90d.png"
+            class="route-recommendation-image"
+          />
+          <text class="product-recommendation-text">路线推荐</text>
+        </view>
+      </view>
+      <view class="view-a-pc-uqt">
+        <view class="service-item">
+          <image
+            src="https://weavefox.alipay.com/assets/e585813e-3594-43e6-b4f1-e69dc6dd6854.png"
+            class="food-recommendation-image"
+          />
+          <text class="food-recommendation-text-two">美食推荐</text>
+        </view>
+      </view>
+      <view class="view-yoglwd">
+        <view class="all-services">
+          <text class="all-services-text">全部服务</text>
+          <image
+            src="https://weavefox.alipay.com/assets/6ac0354b-894d-44e7-9123-9a5b2e8310fe.png"
+            class="all-services-image"
+          />
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

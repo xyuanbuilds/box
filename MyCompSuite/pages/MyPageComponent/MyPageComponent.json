@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "city-welcome": "../../components/CityWelcome/CityWelcome",
+    "service-display": "../../components/ServiceDisplay/ServiceDisplay",
+    "service-list": "../../components/ServiceList/ServiceList",
+    "historic-site-detail": "../../components/HistoricSiteDetail/HistoricSiteDetail",
+    "feature-buttons": "../../components/FeatureButtons/FeatureButtons"
+  },
+  "styleIsolation": "apply-shared"
+}

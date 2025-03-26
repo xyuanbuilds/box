@@ -1,0 +1,10 @@
+<view class="wrapper-2">
+  <text class="welcome-message">欢迎来到杭州</text>
+  <text class="city-description">
+    <text class="ai-assistant-message">人间天堂，</text>
+    <text class="memory-highlight">最忆</text>
+    <text class="city-exclamation">杭州！</text>
+    <image src="https://weavefox.alipay.com/assets/b422a23e-5174-4656-b6c5-3b253bcdc471.png" class="city-image" />
+    <text class="ai-assistant-message">我是您的城市AI旅行助理杭小忆，需要旅行建议或者帮助都可以找我</text>
+  </text>
+</view>

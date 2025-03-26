@@ -1,0 +1,9 @@
+<view class="wrapper">
+  <view class="main-container">
+    <city-welcome />
+    <service-display />
+    <service-list />
+    <historic-site-detail />
+    <feature-buttons />
+  </view>
+</view>

@@ -1,0 +1,50 @@
+.wrapper-2 {
+  border-radius: 4rpx;
+  background-color: rgb(236, 243, 254);
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30rpx;
+  padding-top: 16rpx;
+  padding-right: 40rpx;
+  box-sizing: border-box;
+}
+
+.welcome-message {
+  color: rgb(22, 40, 80);
+  font-size: 42rpx;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+.city-description {
+  font-size: 24rpx;
+  margin-top: 16rpx;
+  box-sizing: border-box;
+}
+
+.ai-assistant-message {
+  color: rgb(42, 63, 100);
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.memory-highlight {
+  color: rgb(90, 108, 139);
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.city-exclamation {
+  color: rgb(44, 65, 101);
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.city-image {
+  border-radius: 8rpx;
+  flex-shrink: 0;
+  width: 28rpx;
+  height: 24rpx;
+  box-sizing: border-box;
+}

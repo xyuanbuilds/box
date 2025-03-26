@@ -1,0 +1,49 @@
+<view class="wrapper-5">
+  <view class="site-container">
+    <view class="header-section">
+      <view class="title-wrapper">
+        <text class="site-title">寻迹杭州</text>
+        <view class="action-bar">
+          <image
+            src="https://weavefox.alipay.com/assets/da28f379-a3c9-490c-a5e9-cd12d133e5f0.png"
+            class="thumbnail-image"
+          />
+          <text class="action-text">换一换</text>
+        </view>
+      </view>
+      <view class="content-section">
+        <view class="info-wrapper">
+          <view class="media-row">
+            <view class="image-gallery">
+              <image
+                src="https://weavefox.alipay.com/assets/24647cb4-594c-4e36-9819-4726218df7b7.png"
+                class="gallery-image-one"
+              />
+              <image
+                src="https://weavefox.alipay.com/assets/0abcbbdf-83ea-41cc-974b-588e05b66bea.png"
+                class="gallery-image-two"
+              />
+            </view>
+            <text class="site-description">南宋皇城的秘密-繁华深处的隐秘宫廷</text>
+          </view>
+        </view>
+        <view class="additional-info">
+          <view class="description-wrapper">
+            <text class="site-description">南宋皇城的秘密-繁华深处的隐秘宫廷</text>
+            <view class="image-gallery">
+              <image
+                src="https://weavefox.alipay.com/assets/45058eca-6523-4b5a-9242-bb3536269a48.png"
+                class="gallery-image-one"
+              />
+              <image
+                src="https://weavefox.alipay.com/assets/3cb3f4fd-09fb-4a7d-98a6-39673c0c119c.png"
+                class="gallery-image-two"
+              />
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="footer-section" />
+  </view>
+</view>

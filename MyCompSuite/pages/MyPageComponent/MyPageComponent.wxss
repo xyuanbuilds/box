@@ -1,0 +1,14 @@
+.wrapper {
+  min-width: 750rpx;
+  padding: 130.43rpx 4.66rpx 144.41rpx 0rpx;
+  max-width: 750rpx;
+  box-sizing: border-box;
+}
+
+.main-container {
+  margin-top: 4.66rpx;
+  margin-bottom: 4.66rpx;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
